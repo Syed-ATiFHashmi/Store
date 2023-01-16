@@ -14,7 +14,7 @@ class Index extends Controller {
 		}
 	}
 	function getCartItems(){
-		$this->product_array = $this->index_model->GetAllItems("SELECT * FROM tblproduct ORDER BY id ASC");
+		$this->product_array = $this->index_model->GetAllItems("SELECT * FROM products ORDER BY id ASC");
 	}
 
 	function add_inspection($value)

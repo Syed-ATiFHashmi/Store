@@ -15,8 +15,8 @@ class dbconn extends Safe{
         try{
             $this->host         = "localhost";
             $this->user         = "root";
-            $this->password     = "ZDhm@8686";
-            $this->database     = "blog_samples";
+            $this->password     = "";
+            $this->database     = "StoreDB";
 
             $this->MySQLConnect();
             date_default_timezone_set('Europe/London');
