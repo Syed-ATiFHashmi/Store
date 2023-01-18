@@ -1,8 +1,12 @@
 <?php
 
 class Safe{
+    protected $host         = "localhost";
+    protected $user         = "root";
+    protected $password     = "";
+    protected $database     = "StoreDB";
 
-    public function __construct(){
+    public function __construct(){        
         $_GET       = filter_input_array(INPUT_GET, FILTER_SANITIZE_STRING);
         $_POST      = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
         $_REQUEST   = (array)$_POST + (array)$_GET + (array)$_REQUEST;

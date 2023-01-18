@@ -5,19 +5,12 @@ class dbconn extends Safe{
 	public $connection;
     public $error           = array();
 
-    protected $host, $user, $password, $database;
-
     public $LastInsertedIds = array();
     public $ConnectionLastId= NULL;
 
 	public function __construct(){
 		parent::__construct();
         try{
-            $this->host         = "localhost";
-            $this->user         = "root";
-            $this->password     = "ZDhm@8686";
-            $this->database     = "StoreDB";
-
             $this->MySQLConnect();
             date_default_timezone_set('Europe/London');
         }catch(Exception $e){
