@@ -12,7 +12,7 @@ class Index_Model extends dbconn
 	}
 	public function getAllItems()
 	{
-		return $this->Select('tblproduct','*',"","","","","");
+		return $this->Select('products','*',"","","","","");
 	}
 	public function check_login_records($data)
 	{

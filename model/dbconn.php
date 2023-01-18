@@ -15,7 +15,7 @@ class dbconn extends Safe{
         try{
             $this->host         = "localhost";
             $this->user         = "root";
-            $this->password     = "";
+            $this->password     = "ZDhm@8686";
             $this->database     = "StoreDB";
 
             $this->MySQLConnect();

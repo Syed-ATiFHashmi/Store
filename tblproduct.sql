@@ -1,9 +1,9 @@
 --
--- Table structure for table `tblproduct`
+-- Table structure for table `products`
 --
 
 
-CREATE TABLE `tblproduct` (
+CREATE TABLE `products` (
   `id` int NOT NULL,
   `name` varchar(255) NOT NULL,
   `code` varchar(255) NOT NULL,
@@ -12,10 +12,10 @@ CREATE TABLE `tblproduct` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tblproduct`
+-- Dumping data for table `products`
 --
 
-INSERT INTO `tblproduct` (`id`, `name`, `code`, `image`, `price`) VALUES
+INSERT INTO `products` (`id`, `name`, `code`, `image`, `price`) VALUES
 (1, 'Dispaly Board 1', 'DB1', 'product-images/TVMotherBoard1.jpeg', 1500.00),
 (2, 'Dispaly Board 3', 'DB3', 'product-images/TVMotherBoard2.jpeg', 800.00),
 (3, 'Dispaly Board 2', 'DB2', 'product-images/TVMotherBoard3.jpeg', 300.00),
@@ -28,9 +28,9 @@ INSERT INTO `tblproduct` (`id`, `name`, `code`, `image`, `price`) VALUES
 --
 
 --
--- Indexes for table `tblproduct`
+-- Indexes for table `products`
 --
-ALTER TABLE `tblproduct`
+ALTER TABLE `products`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `product_code` (`code`);
 
@@ -39,9 +39,9 @@ ALTER TABLE `tblproduct`
 --
 
 --
--- AUTO_INCREMENT for table `tblproduct`
+-- AUTO_INCREMENT for table `products`
 --
-ALTER TABLE `tblproduct`
+ALTER TABLE `products`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
