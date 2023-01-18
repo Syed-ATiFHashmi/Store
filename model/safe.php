@@ -3,7 +3,7 @@
 class Safe{
     protected $host         = "localhost";
     protected $user         = "root";
-    protected $password     = "";
+    protected $password     = "ZDhm@8686";
     protected $database     = "StoreDB";
 
     public function __construct(){        
