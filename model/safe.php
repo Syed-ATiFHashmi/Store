@@ -6,10 +6,13 @@ class Safe{
     protected $password     = "ZDhm@8686";
     protected $database     = "StoreDB";
 
+    
+    //ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY '';
+    
     public function __construct(){        
-        $_GET       = filter_input_array(INPUT_GET, FILTER_SANITIZE_STRING);
-        $_POST      = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
-        $_REQUEST   = (array)$_POST + (array)$_GET + (array)$_REQUEST;
+        //$_GET       = filter_var(INPUT_GET, FILTER_SANITIZE_STRING);
+        //$_POST      = filter_var(INPUT_POST, FILTER_SANITIZE_STRING);
+        //$_REQUEST   = (array)$_POST + (array)$_GET + (array)$_REQUEST;
     }
 
     public function Value($val){
